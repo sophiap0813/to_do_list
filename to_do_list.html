@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <title>은서의 to-do list </title>
+   <title>은서의 to-do list 입력 </title>
    <style>
       body {
          background-color: aqua;
          text-align: center;
+      }
+
+      table {
+         border: 1px solid black;
+         border-collapse: collapse;
+         margin-left: auto;
+         margin-right: auto;
+         width: 500px;
+      }
+
+      tr {
+         border: 1px solid black;
+      }
+
+      td {
+         border: 1px solid black;
+      }
+
+      .todotext {
+         text-align: left;
+         padding-left: 10px;
+      }
+
+      .todoInputBox {
+         margin-left: 5px;
+         width: 300px;
+         height: 30px;
+      }
+
+      .alignCenter {
+         text-align: center;
+      }
+
+      .todoListButton {
+         width: 60px
       }
 
       .button {
@@ -14,7 +48,7 @@
          /* Green */
          border: none;
          color: white;
-         padding: 15px 32px;
+         padding: 5px 5px;
          text-align: center;
          text-decoration: none;
          display: inline-block;
@@ -22,6 +56,7 @@
          margin: 4px 2px;
          cursor: pointer;
       }
+
 
       .button2 {
          background-color: #008CBA;
@@ -49,12 +84,31 @@
 
 <body>
    <div id="title">
-      <h1> To Do List</h1>
+      <h1><a href="index.html"> 은서의 to do list</a></h1>
    </div>
-   <div id="content1"> </div>
+
+   <div id="content1" class='body'>
+      <table>
+         <tr>
+            <td colspan="3" class="todotext">
+               <input type="text" class="todoInputBox" placeholder='과제를 입력해주세요'>
+            </td>
+         </tr>
+         <tr>
+            <td class="todotext">코딩 1시간</td>
+            <td class="todoListButton"><button class="button button2">완료</button></td>
+            <td class="todoListButton"><button class="button button3">삭제</button></td>
+         </tr>
+         <tr>
+            <td class="todotext">수학공부 </td>
+            <td class="todoListButton"><button class="button button2">완료</button></td>
+            <td class="todoListButton"><button class="button button3">삭제</button></td>
+
+         </tr>
+      </table>
+   </div>
    <div id="content2"></div>
    <div id="content3"></div>
    <div id="content4">make by eunseo</div>
 </body>
-
 </html>
